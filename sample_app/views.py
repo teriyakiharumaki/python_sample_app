@@ -4,6 +4,9 @@ from django.forms import ModelForm
 from sample_app.models import Post
 
 
+def top_view(request):
+    return render(request, 'sample_app/top.html')
+
 def create_post(request):
     """
     新たなデータを作成する
