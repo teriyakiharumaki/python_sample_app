@@ -19,8 +19,8 @@
     {% endif %}
       {% csrf_token %}
       {{ form }}
-          <button type="submit">送信</button>
+          <button type="submit" type="button" class="btn btn-outline-primary">送信</button>
     </form>
-    <a href="{% url 'sample_app:read_post' %}">戻る</a>
+    <a class="btn btn-outline-secondary" href="{% url 'sample_app:read_post' %}" role="button">戻る</a>
 </body>
 </html>
